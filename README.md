@@ -3,13 +3,13 @@
 ## Criptare simterica:
 	1. RC6: [https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf][1]
 	2. AES:
-		* Cursul 4 din fisierul de resurse contine explicatii pentru AES.
-		* Prezentare grafica: [https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s][2]
-		* Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf][3] (Capitolul 5, Apendix pentru test)
+		- Cursul 4 din fisierul de resurse contine explicatii pentru AES.
+		- Prezentare grafica: [https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s][2]
+		- Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf][3] (Capitolul 5, Apendix pentru test)
 	3. DES:
-		* Cursul 3 din fisierul de resurse contine explicatii pentru DES.
-		* Specificatii NIST: [https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf][4]
-		* Triple DES este o extensie pentru DES
+		- Cursul 3 din fisierul de resurse contine explicatii pentru DES.
+		- Specificatii NIST: [https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf][4]
+		- Triple DES este o extensie pentru DES
 
 	4. De asemenea am incluse si modurile de operare pentru folosirea cifrurilor pe bloc.
 
@@ -18,18 +18,18 @@
 	2. SHA3: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf][6]
 	
 	3. Am avut nevoie si de urmatorul proiect pentru implementarea colectiei de algoritmi SHA3 deoarece am avut nevoie de referinte pentru a putea interpreta specificatia de la NIST:
-	    * [https://github.com/brainhub/SHA3IUF][7]
+	    - [https://github.com/brainhub/SHA3IUF][7]
 
 ## Criptare asimetrica:
 	
 	1. Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf][8]
 
-		* Apendix A.1.1.1, A.1.1.2 si A.1.1.3 contin algoritmii necesari pentru generarea numerelor prime (p si q) folosite in cadrul cifrurilor asimetrice.
-		* Apendix C descrie o serie de algoritmi folositi pentru verificarea primalitatii numerelor generate.
-		    * Eu am implementat algoritmul Miller-Rabin pentru testul de primalitate.
+		- Apendix A.1.1.1, A.1.1.2 si A.1.1.3 contin algoritmii necesari pentru generarea numerelor prime (p si q) folosite in cadrul cifrurilor asimetrice.
+		- Apendix C descrie o serie de algoritmi folositi pentru verificarea primalitatii numerelor generate.
+		    - Eu am implementat algoritmul Miller-Rabin pentru testul de primalitate.
 
 	2. Proiectul openssl: [https://github.com/openssl/openssl][9]
-		* M-am folosit si de codul sursa de la proiectul openssl ca referinta, contine pasii mentionati in FIPS 186-4.
+		- M-am folosit si de codul sursa de la proiectul openssl ca referinta, contine pasii mentionati in FIPS 186-4.
 
 	Deocamdata am implementat algoritmii pentru generarea numerelor prime.
 	Am implementat tot ce este necesar pentru folosirea cifrului RSA. (Generare chei, semnare si verificare).
@@ -46,14 +46,14 @@ Am implementat si encodarea in baza 64.
 	2. Blowfish
 	3. Twofish
 
-	* Ceilalti algoritmi folositi pentru criptarea simetrica nu au fost dificil de implementat.		
+	- Ceilalti algoritmi folositi pentru criptarea simetrica nu au fost dificil de implementat.		
 
 ## Criptare asimetrica:
 	1. DSA:
-		* Partea de generare de chei este acoperita.
-		* Sunt explicati pasii in cursul 9 din fisierul de resurse.
-		* De asemenea exista resurse in specificatiile din FIPS 186-4 si codul prezent in proiectul openssl.
-			* Din cate am observat nu implica o dificultate foarte mare.
+		- Partea de generare de chei este acoperita.
+		- Sunt explicati pasii in cursul 9 din fisierul de resurse.
+		- De asemenea exista resurse in specificatiile din FIPS 186-4 si codul prezent in proiectul openssl.
+			- Din cate am observat nu implica o dificultate foarte mare.
 
 	2. DH si ECDH:	Deocamdata nu am cautat resurse, dar ma astept sa fie mai usor decat ce implica RSA sau DSA
 		
