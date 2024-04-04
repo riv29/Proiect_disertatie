@@ -1,34 +1,34 @@
 # Resurse folosite pana in momentul de fata:
 
 ## Criptare simterica:
-	1. RC6: https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf
+	1. RC6: [https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf](https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf)
 	2. AES:
 		* Cursul 4 din fisierul de resurse contine explicatii pentru AES.
-		* Prezentare grafica: https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s
-		* Specificatie NIST: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf (Capitolul 5, Apendix pentru test)
+		* Prezentare grafica: [https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s](https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s)
+		* Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) (Capitolul 5, Apendix pentru test)
 	3. DES:
 		* Cursul 3 din fisierul de resurse contine explicatii pentru DES.
-		* Specificatii NIST: https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf
+		* Specificatii NIST: [https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf](https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf)
 		* Triple DES este o extensie pentru DES
 
 	4. De asemenea am incluse si modurile de operare pentru folosirea cifrurilor pe bloc.
 
 ## Functii de hashing:
-	1. SHA1 + SHA2: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf
-	2. SHA3: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
+	1. SHA1 + SHA2: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
+	2. SHA3: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf)
 	
 	3. Am avut nevoie si de urmatorul proiect pentru implementarea colectiei de algoritmi SHA3 deoarece am avut nevoie de referinte pentru a putea interpreta specificatia de la NIST:
-	    * https://github.com/brainhub/SHA3IUF
+	    * [https://github.com/brainhub/SHA3IUF](https://github.com/brainhub/SHA3IUF)
 
 ## Criptare asimetrica:
 	
-	1. Specificatie NIST: https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf
+	1. Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf)
 
 		* Apendix A.1.1.1, A.1.1.2 si A.1.1.3 contin algoritmii necesari pentru generarea numerelor prime (p si q) folosite in cadrul cifrurilor asimetrice.
 		* Apendix C descrie o serie de algoritmi folositi pentru verificarea primalitatii numerelor generate.
 		    * Eu am implementat algoritmul Miller-Rabin pentru testul de primalitate.
 
-	2. Proiectul openssl: https://github.com/openssl/openssl
+	2. Proiectul openssl: [https://github.com/openssl/openssl](https://github.com/openssl/openssl)
 		* M-am folosit si de codul sursa de la proiectul openssl ca referinta, contine pasii mentionati in FIPS 186-4.
 
 	Deocamdata am implementat algoritmii pentru generarea numerelor prime.
@@ -42,7 +42,7 @@ Am implementat si encodarea in baza 64.
 
 # Va trebui implementat:
 ## Criptare simetrica:
-	1. ARIA: https://www.rfc-editor.org/rfc/rfc5794
+	1. ARIA: [https://www.rfc-editor.org/rfc/rfc5794](https://www.rfc-editor.org/rfc/rfc5794)
 	2. Blowfish
 	3. Twofish
 
@@ -67,10 +67,10 @@ Am implementat si encodarea in baza 64.
 	Asi dori sa implementez un TRNG pe un FPGA pe care sa-l folosesc in paralel cu un PRNG.
 		Ideea principala este de a genera un "seed" pentru PRNG, prin intermediul TRNG-ului.
 
-	Am gasit urmatorul articol: https://people.csail.mit.edu/devadas/pubs/ches-fpga-random.pdf
+	Am gasit urmatorul articol: [https://people.csail.mit.edu/devadas/pubs/ches-fpga-random.pdf](https://people.csail.mit.edu/devadas/pubs/ches-fpga-random.pdf)
 		Din cate inteleg, se doreste fortarea starii de metastabilitate, iar in felul asta se pot "cultiva" biti astfel incat sa obtii date aleatorii.
 		NIST ofera si un set de teste pentru verificare gradului de aleatorism, deocamdata nu am parcurs documentul, stiu doar ca poate fi de folos:
-			https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf
+			[https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf)
 
 	De asemenea exista si un proiect in acest sens dar care se foloseste de o alta metoda:
-		https://github.com/stnolting/neoTRNG
+		[https://github.com/stnolting/neoTRNG](https://github.com/stnolting/neoTRNG)
