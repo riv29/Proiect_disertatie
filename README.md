@@ -1,16 +1,16 @@
 # Resurse folosite pana in momentul de fata:
 
 Criptare simterica:  
-	&emsp;1. RC6: [https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf](https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf)  
-	&emsp;2. AES:  
+	&emsp;1. [RC6](BlockChipers/RC6): [https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf](https://people.csail.mit.edu/rivest/pubs/RRSY98.pdf)  
+	&emsp;2. [AES](BlockChipers/AES):  
 		&emsp;&emsp;- Cursul 4 din fisierul de resurse contine explicatii pentru AES.  
 		&emsp;&emsp;- Prezentare grafica: [https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s](https://www.youtube.com/watch?v=gP4PqVGudtg&t=156s)  
 		&emsp;&emsp;- Specificatie NIST: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) (Capitolul 5, Apendix pentru test)  
-	&emsp;3. DES:  
+	&emsp;3. [DES](BlockChipers/DES):  
 		&emsp;&emsp;- Cursul 3 din fisierul de resurse contine explicatii pentru DES.  
 		&emsp;&emsp;- Specificatii NIST: [https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf](https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf)  
 		&emsp;&emsp;- Triple DES este o extensie pentru DES  
-	&emsp;4. De asemenea am incluse si modurile de operare pentru folosirea cifrurilor pe bloc.  
+	&emsp;4. De asemenea am incluse si [modurile de operare](BlockChipers/Modes) pentru folosirea cifrurilor pe bloc.  
 
 Functii de hashing:  
 	&emsp;1. SHA1 + SHA2: [https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)  
